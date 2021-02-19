@@ -13,6 +13,9 @@ import 'database_factory.dart';
 /// Check support documentation.
 DatabaseFactory get databaseFactoryWeb => databaseFactoryWebImpl;
 
+
+DatabaseFactoryWeb get databaseFactoryWebCustom => databaseFactoryWebImplCustom;
+
 /// The Web plugin registration.
 class SqflitePluginWeb extends PlatformInterface {
   static final _readyCompleter = Completer<bool>();

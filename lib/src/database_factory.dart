@@ -12,6 +12,13 @@ DatabaseFactory get databaseFactoryWebImpl {
   return _databaseFactoryWebImpl ??= DatabaseFactoryWeb();
 }
 
+DatabaseFactoryWeb _databaseFactoryWebImplCustom;
+
+/// The web database factory.
+DatabaseFactoryWeb get databaseFactoryWebImplCustom {
+  return _databaseFactoryWebImplCustom ??= DatabaseFactoryWeb();
+}
+
 /// The web database factory.
 class DatabaseFactoryWeb extends DatabaseFactory {
   SqfliteWebDatabase _db;
