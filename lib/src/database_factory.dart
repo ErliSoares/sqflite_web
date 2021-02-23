@@ -56,4 +56,10 @@ class DatabaseFactoryWeb extends DatabaseFactory {
       data: data,
         path: path, readOnly: false, logLevel: sqfliteLogLevelNone);
   }
+
+  @override
+  Future<void> setDatabasesPath(String path) {
+    // TODO: implement setDatabasesPath
+    throw UnimplementedError();
+  }
 }
